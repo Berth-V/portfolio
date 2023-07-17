@@ -1,6 +1,7 @@
-import '../components/Home.css';
-import logo from '../assets/avlogo.webp';
+import './Home.css';
+import Logosvg from './Logosvg'
 import {motion} from 'framer-motion';
+import {NavLink} from 'react-router-dom';
 
 function Home() {
 
@@ -14,10 +15,7 @@ function Home() {
         staggerChildren:0.2
       }
     },
-    leave:{
-      y:10,
-      opacity:0
-    }
+    leave:{y:10,opacity:0}
   }
 
   return (
@@ -44,10 +42,11 @@ function Home() {
               Jr Dev resided in Mexico.
             </motion.p>
           </motion.div>
-          <img className='home__logo'
-            src={logo}
-          />
+          <Logosvg/>
         </div>
+        <NavLink className='home__nextbutton' to='/about'>
+          &gt;
+        </NavLink>
       </div>
   )
 }

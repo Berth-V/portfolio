@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 75px;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -50,3 +50,4 @@
 .nav__span{
   font-size: 11px;
 }
+

@@ -7,7 +7,9 @@ import {BsFillFileEarmarkCodeFill} from 'react-icons/bs'
 import {MdContacts} from 'react-icons/md'
 
 function Header() {
-
+  
+  //Framer Motion variants//
+  
   const hoverVariants={
     hover:{
       scale: 1.2,

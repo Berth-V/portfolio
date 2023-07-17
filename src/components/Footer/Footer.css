@@ -1,0 +1,37 @@
+:root{
+    --primary-color:#202020;
+    --secondary-color: #FF5D1C;
+    --thrid-color: #D6D6D6;
+  }
+
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100vw;
+}
+
+.icon__container{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon{
+    font-size: 30px;
+    color: var(--thrid-color);
+    transition-duration: 0.3s;
+}
+
+.icon:hover{
+    color: var(--secondary-color);
+}
+
+.icon__separator{
+    height: 30px;
+}
