@@ -5,11 +5,10 @@ import {DiHtml5, DiCss3, DiJavascript} from 'react-icons/di'
 import {SiReact, SiFramer} from 'react-icons/si'
 import {BsGit} from 'react-icons/bs'
 import {AiFillGithub} from 'react-icons/ai'
-
+  
 function About() {
-
+  
   //Framer Motion Variants//
-
   const skillsAnimation={
     start:{scale:0},
     onStay:{
@@ -19,9 +18,8 @@ function About() {
         staggerChildren:0.2
       }
     },
-    leave:{scale:0}
+    leave:{scale: 0}
   }
-
   return (
     <div className='about'>
       <div className='about__content'>

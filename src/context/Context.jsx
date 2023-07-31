@@ -1,14 +1,15 @@
-import { useState,createContext } from "react";
+import {useState, createContext} from "react";
 
 export const Context = createContext();
 
 export const Data = ({children}) => {
-  const [pageTransition,setPageTranstion] = useState(true);
+  const [onContactPage, isOnContactPage] = useState(false);
   return (
-    <Context.Provider value={({
-      pageTransition, 
-      setPageTranstion
-    })}
+    <Context.Provider 
+      value={{
+        onContactPage,
+        isOnContactPage
+      }}
     >
       {children}
     </Context.Provider>

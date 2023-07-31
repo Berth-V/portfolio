@@ -1,13 +1,27 @@
 import '../Footer/Footer.css';
-import {forwardRef} from 'react';
+import {useContext} from 'react';
+import {Context} from '../../context/Context';
+import {motion} from 'framer-motion';
 import {NavLink} from 'react-router-dom';
 import {AiFillGithub,AiFillLinkedin,AiFillInstagram} from 'react-icons/ai'
 import {IoMdMail} from "react-icons/io";
 
-const Footer = forwardRef((props, ref)=> {
+function Footer() {
+  const {onContactPage}=useContext(Context);
+  const footerAnimationVariants={
+    onStart:{y:0},
+    onStay:{y:250,scale:3},
+    onLeave:{y:0,x:0}
+  }
   return (
-    <div className='footer' ref={ref}>
+    <motion.div className='footer'
+      variants={footerAnimationVariants}
+      initial={'onStart'}
+      animate={onContactPage&& 'onStay'}
+      exit={'onLeave'}
+    >
       <div className='icon__container'>
+        {console.log(onContactPage)}
         <NavLink className='icon__navlink'
           to='mailto:bertv0118@gmail.com'
         >
@@ -35,9 +49,9 @@ const Footer = forwardRef((props, ref)=> {
           <AiFillInstagram  className='icon'/>
         </NavLink>
       </div>
-    </div>
+    </motion.div>
   )
 }
-)
+
 
 export default Footer;
