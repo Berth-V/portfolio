@@ -3,7 +3,8 @@
   --secondary-color: #ff5d1c;
   --thrid-color: #d6d6d6;
   --footer-height: 50px;
-  --footer-icons-size: 50px;
+  --footer-icons-size: 30px;
+  --footer-icons-grow: 50px;
   --icon-container-width: 400px;
 }
 
@@ -50,7 +51,7 @@
 @media screen and (max-width: 685px) {
   :root {
     --footer-height: 40px;
-    --footer-icons-size: 35px;
+    --footer-icons-grow: 35px;
     --icon-container-width: 320px;
   }
 
@@ -65,14 +66,15 @@
 
 @media screen and (max-width: 460px) {
   :root {
-    --footer-icons-size: 30px;
+    --footer-icons-size: 25px;
+    --footer-icons-grow: 30px;
     --icon-container-width: 250px;
   }
 }
 
 @media screen and (max-width: 380px) {
   :root {
-    --footer-icons-size: 25px;
+    --footer-icons-grow: 20px;
     --icon-container-width: 220px;
   }
 }
@@ -80,7 +82,8 @@
 @media screen and (max-width: 330px) {
   :root {
     --footer-height: 30px;
-    --footer-icons-size: 25px;
+    --footer-icons-grow: 15px;
+    --footer-icons-grow: 25px;
   }
 
   .icon__container {

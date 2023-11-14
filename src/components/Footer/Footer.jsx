@@ -17,10 +17,10 @@ function Footer() {
     },
   };
   const contactAnimationVariants = {
-    onStart: {x: 0, y: 0, width: '250px', fontSize: '30px'},
+    onStart: {x: 0, y: 0, width: '250px', fontSize: 'var(--footer-icons-size)'},
     onStay: {
       width: 'var(--icon-container-width)',
-      fontSize: 'var(--footer-icons-size)',
+      fontSize: 'var(--footer-icons-grow)',
       transition: {delay: 0.3, duration: 1.3},
     },
   };

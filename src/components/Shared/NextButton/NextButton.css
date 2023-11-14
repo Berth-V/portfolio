@@ -45,7 +45,7 @@
 @media screen and (max-width: 685px) {
   .nextbutton {
     opacity: 1;
-    font-size: 65px;
+    font-size: 55px;
   }
 
   .nextbutton:hover {
@@ -55,12 +55,13 @@
 
 @media screen and (max-width: 460px) {
   .nextbutton {
-    font-size: 45px;
+    font-size: 40px;
+    border: 1px solid var(--secondary-color);
   }
 }
 
 @media screen and (max-width: 330px) {
   .nextbutton {
-    font-size: 40px;
+    font-size: 30px;
   }
 }

@@ -1,7 +1,7 @@
 .about {
   display: flex;
   width: 100vw;
-  height: calc(100vh - 125px);
+  height: calc(100dvh - 125px);
   margin-top: var(--margin-top-size);
   justify-content: center;
   align-items: center;
@@ -141,7 +141,12 @@
 
 @media screen and (max-width: 685px) {
   .about {
-    height: calc(100vh - 90px);
+    height: calc(100dvh - 90px);
+    margin: 0;
+  }
+
+  .about__content{
+    margin-top: 60px;
   }
 
   .about__h1 {
@@ -178,7 +183,7 @@
 
 @media screen and (max-width: 530px) {
   .about__description {
-    height: 50vh;
+    height: 50dvh;
     width: 70vw;
   }
 
@@ -247,7 +252,7 @@
 
 @media screen and (max-width: 330px) {
   .about {
-    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
   }
 
   .about__h1 {

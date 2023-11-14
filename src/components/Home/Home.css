@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: calc(100vh - 125px);
+  height: calc(100dvh - 125px);
 }
 
 .home__container {
@@ -89,11 +89,12 @@
 
 @media screen and (max-width: 685px) {
   .home {
-    margin-top: 50px;
-    height: calc(100vh - 90px);
+    margin-top: 0;
+    height: calc(100dvh - 90px);
   }
 
   .home__container {
+    margin-top: 50px;
     flex-direction: column;
     height: 100%;
   }
@@ -143,7 +144,6 @@
 
 @media screen and (max-width: 330px) {
   .home {
-    height: calc(100vh - 70px);
-    margin-top: 40px;
+    height: calc(100dvh - 70px);
   }
 }

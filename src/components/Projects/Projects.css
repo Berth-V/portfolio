@@ -317,7 +317,12 @@
 
 @media screen and (max-width: 685px) {
   .projects {
-    height: calc(100vh - 90px);
+    height: 1500px;
+    margin-top: 0;
+  }
+
+  .projects__container {
+    margin-top: 100px;
   }
 
   .projects__precard {
@@ -412,6 +417,6 @@
 
 @media screen and (max-width: 330px) {
   .projects {
-    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
   }
 }

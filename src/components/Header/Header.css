@@ -78,9 +78,9 @@
   }
 
   .menu__btn {
-    height: 30px;
-    width: 35px;
-    font-size: 35px;
+    height: 45px;
+    width: 45px;
+    font-size: 45px;
     padding: 2px;
     left: 5px;
     top: 5px;
@@ -107,10 +107,10 @@
   }
 
   .menu__btn {
-    height: 25px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     font-size: 35px;
-    padding: px;
+    padding: 0;
     left: 5px;
     top: 5px;
   }
