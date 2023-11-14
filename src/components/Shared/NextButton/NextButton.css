@@ -1,0 +1,66 @@
+:root {
+  --secondary-color: #ff5d1c;
+  --thrid-color: #d6d6d6;
+}
+
+.nextbutton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  right: 5px;
+  top: 50vh;
+  color: var(--secondary-color);
+  height: auto;
+  width: auto;
+  font-size: 90px;
+  padding: 5px;
+  opacity: 0.2;
+  transition-duration: 0.3s;
+  z-index: 10;
+}
+
+.nextbutton:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+@media screen and (max-width: 1120px) {
+  .nextbutton {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .nextbutton {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .nextbutton {
+    opacity: 1;
+    font-size: 65px;
+  }
+
+  .nextbutton:hover {
+    opacity: unset;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .nextbutton {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .nextbutton {
+    font-size: 40px;
+  }
+}

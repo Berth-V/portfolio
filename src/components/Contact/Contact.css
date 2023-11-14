@@ -1,0 +1,118 @@
+.contact {
+  height: calc(100vh - 75px);
+  margin-top: var(--margin-top-size);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.contact__box {
+  height: 450px;
+  width: 100vw;
+}
+
+.contact__rectangle {
+  position: absolute;
+  margin-top: -75px;
+  scale: 1.4;
+}
+
+.contact__h1 {
+  font-size: 43px;
+  text-align: center;
+}
+
+.contact__prevbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  height: auto;
+  width: auto;
+  font-size: 90px;
+  padding: 5px;
+  opacity: 0.2;
+  transition-duration: 0.3s;
+  left: 5px;
+  z-index: 10;
+}
+
+.contact__prevbutton:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+@media screen and (max-width: 1120px) {
+  .contact__prevbutton {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .contact__prevbutton {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .contact {
+    height: calc(100vh - 90px);
+  }
+
+  .contact__h1 {
+    font-size: 40px;
+  }
+
+  .contact__rectangle {
+    margin-top: -10px;
+    scale: 0.9;
+  }
+
+  .contact__prevbutton {
+    font-size: 65px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contact__h1 {
+    font-size: 30px;
+  }
+
+  .contact__rectangle {
+    scale: 0.7;
+  }
+
+  .contact__prevbutton {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact__rectangle {
+    scale: 0.6;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .contact {
+    height: calc(100vh - 70px);
+  }
+
+  .contact__h1 {
+    font-size: 25px;
+  }
+
+  .contact__prevbutton {
+    font-size: 40px;
+  }
+}

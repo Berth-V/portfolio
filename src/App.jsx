@@ -1,26 +1,27 @@
-import './App.css';
-import { useRef } from 'react';
+import {useEffect} from 'react';
 import {HashRouter} from 'react-router-dom';
-import { Data } from './context/Context';
-import Header from './components/Header';
-import TransitionRoutes from './components/TransitionRoutes';
+import {Data} from './components/Context/Context';
+import './App.css';
+import Header from './components/Header/Header';
+import TransitionRoutes from './components/TransitionRoutes/TransitionRoutes';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [location]);
 
-  const ref =useRef()
-  
   return (
     <>
-    <HashRouter>
-      <Data>
-        <Header/>
-        <TransitionRoutes/>
-        <Footer ref={ref}/>
-      </Data>
-    </HashRouter>
+      <HashRouter>
+        <Data>
+          <Header />
+          <TransitionRoutes />
+          <Footer />
+        </Data>
+      </HashRouter>
     </>
-  )
+  );
 }
 
 export default App;

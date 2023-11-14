@@ -1,37 +1,95 @@
-:root{
-    --primary-color:#202020;
-    --secondary-color: #FF5D1C;
-    --thrid-color: #D6D6D6;
+:root {
+  --primary-color: #202020;
+  --secondary-color: #ff5d1c;
+  --thrid-color: #d6d6d6;
+  --footer-height: 50px;
+  --footer-icons-size: 50px;
+  --icon-container-width: 400px;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer[data-ison='true'] {
+  justify-content: center;
+}
+
+.icon__container {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon__navlink {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--thrid-color);
+  transition-duration: 0.3s;
+}
+
+.icon:hover {
+  color: var(--secondary-color);
+}
+
+.icon__separator {
+  height: auto;
+}
+
+@media screen and (max-width: 685px) {
+  :root {
+    --footer-height: 40px;
+    --footer-icons-size: 35px;
+    --icon-container-width: 320px;
   }
 
-.footer{
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
+  .icon__container {
     align-items: center;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100vw;
+  }
+
+  .icon {
+    height: 100%;
+  }
 }
 
-.icon__container{
-    width: 250px;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
+@media screen and (max-width: 460px) {
+  :root {
+    --footer-icons-size: 30px;
+    --icon-container-width: 250px;
+  }
 }
 
-.icon{
-    font-size: 30px;
-    color: var(--thrid-color);
-    transition-duration: 0.3s;
+@media screen and (max-width: 380px) {
+  :root {
+    --footer-icons-size: 25px;
+    --icon-container-width: 220px;
+  }
 }
 
-.icon:hover{
-    color: var(--secondary-color);
-}
+@media screen and (max-width: 330px) {
+  :root {
+    --footer-height: 30px;
+    --footer-icons-size: 25px;
+  }
 
-.icon__separator{
-    height: 30px;
+  .icon__container {
+    align-items: center;
+    width: 200px;
+  }
+
+  .icon {
+    font-size: 20px;
+    height: 100%;
+  }
 }
