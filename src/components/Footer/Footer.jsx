@@ -12,7 +12,7 @@ function Footer() {
   const footerAnimationVariants = {
     onStart: {height: 'var(--footer-height)'},
     onStay: {
-      height: '100vh',
+      height: '100dvh',
       transition: {delay: 0.3, duration: 1},
     },
   };
