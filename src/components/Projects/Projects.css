@@ -36,6 +36,7 @@
   flex-wrap: wrap;
 }
 
+/*MotionCard Component*/
 .projects__precard {
   height: 590px;
   width: auto;
@@ -120,40 +121,6 @@
   align-items: center;
 }
 
-.projects__prevbutton,
-.projects__nextbutton {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
-  color: var(--secondary-color);
-  height: auto;
-  width: auto;
-  font-size: 90px;
-  padding: 5px;
-  opacity: 0.2;
-  transition-duration: 0.3s;
-}
-
-.projects__prevbutton {
-  left: 5px;
-}
-
-.projects__nextbutton {
-  right: 5px;
-}
-
-.projects__prevbutton:hover,
-.projects__nextbutton:hover {
-  text-decoration: none;
-  opacity: 1;
-  color: var(--secondary-color);
-  background-color: transparent;
-  border: 2px solid transparent;
-}
-
 @media screen and (max-width: 1760px) {
   .projects__container {
     justify-content: space-evenly;
@@ -183,6 +150,7 @@
     font-size: 40px;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 500px;
   }
@@ -225,9 +193,10 @@
 
   .projects__box {
     width: 85vw;
-    height: auto;
+    height: 90%;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 450px;
   }
@@ -258,18 +227,15 @@
     width: 87vw;
   }
 
+  /*MotionCard Component*/
   .projects__card {
     height: 360px;
     width: 380px;
   }
-
-  .projects__prevbutton,
-  .projects__nextbutton {
-    font-size: 80px;
-  }
 }
 
 @media screen and (max-width: 900px) {
+  /*MotionCard Component*/
   .projects__card {
     height: 340px;
     width: 360px;
@@ -292,6 +258,7 @@
     width: 80vw;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 470px;
   }
@@ -308,11 +275,6 @@
   .projects__description {
     font-size: 13px;
   }
-
-  .projects__prevbutton,
-  .projects__nextbutton {
-    font-size: 75px;
-  }
 }
 
 @media screen and (max-width: 685px) {
@@ -325,6 +287,7 @@
     margin-top: 100px;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 430px;
   }
@@ -336,12 +299,6 @@
 
   .projects__btn {
     font-size: 11px;
-  }
-
-  .projects__prevbutton,
-  .projects__nextbutton {
-    font-size: 65px;
-    opacity: 1;
   }
 }
 
@@ -358,13 +315,14 @@
     font-size: 16px;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 350px;
   }
 
   .projects__card {
-    height: 290px;
-    width: 290px;
+    height: 300px;
+    width: 300px;
   }
 
   .projects__btn {
@@ -374,16 +332,15 @@
   .projects__description {
     font-size: 12px;
   }
-
-  .projects__prevbutton,
-  .projects__nextbutton {
-    font-size: 55px;
-  }
 }
 
 @media screen and (max-width: 380px) {
   :root {
     --card-img-size: 200px;
+  }
+
+  .projects {
+    height: 1200px;
   }
 
   .projects__h1 {
@@ -394,12 +351,17 @@
     font-size: 13px;
   }
 
+  /*MotionCard Component*/
   .projects__precard {
     height: 260px;
   }
   .projects__card {
-    height: 230px;
-    width: 230px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .projects__btn__box {
+    width: 20%;
   }
 
   .projects__btn {

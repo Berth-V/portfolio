@@ -78,9 +78,9 @@
   }
 
   .menu__btn {
-    height: 45px;
-    width: 45px;
-    font-size: 45px;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
     padding: 2px;
     left: 5px;
     top: 5px;
@@ -113,5 +113,13 @@
     padding: 0;
     left: 5px;
     top: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .menu__btn {
+    height: 33px;
+    width: 33px;
+    font-size: 33px;
   }
 }

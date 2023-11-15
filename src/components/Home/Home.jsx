@@ -23,6 +23,7 @@ function Home() {
       <div className='home__container'>
         <motion.div
           className='home__textBox'
+          /*Framer Motions Attributtes*/
           variants={itemsAnimation}
           initial='start'
           animate='onStay'

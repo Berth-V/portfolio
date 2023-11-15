@@ -41,20 +41,23 @@ function Header() {
   return (
     <motion.nav
       className='nav'
+      /*Framer Motions Attributtes*/
       variants={openNavAnimation}
       animate={isMenuOpen ? 'open' : 'close'}
     >
       <motion.div
         className='menu__btn'
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        /*Framer Motions Attributtes*/
         variants={menuBtnVariants}
         animate={isMenuOpen ? 'end' : 'start'}
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         &gt;
       </motion.div>
       <ul className='nav__ul'>
         <motion.li
           className='nav__li'
+          /*Framer Motions Attributtes*/
           variants={navMenuVariables}
           whileHover={'hover'}
         >
@@ -69,6 +72,7 @@ function Header() {
         </motion.li>
         <motion.li
           className='nav__li'
+          /*Framer Motions Attributtes*/
           variants={navMenuVariables}
           whileHover={'hover'}
         >
@@ -83,6 +87,7 @@ function Header() {
         </motion.li>
         <motion.li
           className='nav__li'
+          /*Framer Motions Attributtes*/
           variants={navMenuVariables}
           whileHover={'hover'}
         >
@@ -97,6 +102,7 @@ function Header() {
         </motion.li>
         <motion.li
           className='nav__li'
+          /*Framer Motions Attributtes*/
           variants={navMenuVariables}
           whileHover={'hover'}
         >

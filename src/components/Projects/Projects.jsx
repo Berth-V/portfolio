@@ -9,7 +9,6 @@ import kateshop from '../../assets/kateshop.jpg';
 import {motion} from 'framer-motion';
 
 function Projects() {
-  const MotionCard = motion(Card);
   const cardData = [
     {
       img: medical,
@@ -44,6 +43,8 @@ function Projects() {
         'This is my first noob project called KateShop, a Cake Shop for a non-launched business, created with pure Javascript.',
     },
   ];
+  //Framer Motion Constant//
+  const MotionCard = motion(Card);
   //Framer Motion Variants//
   const cardAnimations = {
     start: {opacity: 0, y: 50},
@@ -62,24 +63,34 @@ function Projects() {
     <div className='projects'>
       <motion.div
         className='projects__container'
+        /*Framer Motions Attributtes*/
         variants={cardAnimations}
         initial='start'
         animate='onStay'
         exit='leave'
       >
-        <motion.h1 className='projects__h1' variants={cardAnimations}>
+        <motion.h1
+          className='projects__h1'
+          /*Framer Motions Attributtes*/
+          variants={cardAnimations}
+        >
           Projects
         </motion.h1>
-        <motion.div className='projects__box' variants={cardAnimations}>
+        <motion.div
+          className='projects__box'
+          /*Framer Motions Attributtes*/
+          variants={cardAnimations}
+        >
           {cardData.map((card, index) => (
             <MotionCard
-              variants={cardAnimations}
               key={index}
               tittle={card.tittle}
               img={card.img}
               parragraph={card.parragraph}
               website={card.website}
               code={card.code}
+              /*Framer Motions Attributtes*/
+              variants={cardAnimations}
             />
           ))}
         </motion.div>

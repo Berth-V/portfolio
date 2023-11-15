@@ -22,6 +22,11 @@
   justify-content: center;
 }
 
+.footer__rectangle {
+  position: fixed;
+  scale: 1.4;
+}
+
 .icon__container {
   height: auto;
   display: flex;
@@ -55,6 +60,10 @@
     --icon-container-width: 320px;
   }
 
+  .footer__rectangle {
+    scale: 0.9;
+  }
+
   .icon__container {
     align-items: center;
   }
@@ -70,12 +79,20 @@
     --footer-icons-grow: 30px;
     --icon-container-width: 250px;
   }
+
+  .footer__rectangle {
+    scale: 0.7;
+  }
 }
 
 @media screen and (max-width: 380px) {
   :root {
     --footer-icons-grow: 20px;
     --icon-container-width: 220px;
+  }
+
+  .footer__rectangle {
+    scale: 0.6;
   }
 }
 

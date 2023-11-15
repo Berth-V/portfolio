@@ -26,15 +26,24 @@ function About() {
       <div className='about__content'>
         <motion.div
           className='about__description'
+          /*Framer Motions Attributtes*/
           variants={skillsAnimation}
           initial='start'
           animate='onStay'
           exit='leave'
         >
-          <motion.h1 className='about__h1' variants={skillsAnimation}>
+          <motion.h1
+            className='about__h1'
+            /*Framer Motions Attributtes*/
+            variants={skillsAnimation}
+          >
             About
           </motion.h1>
-          <motion.p className='about__p' variants={skillsAnimation}>
+          <motion.p
+            className='about__p'
+            /*Framer Motions Attributtes*/
+            variants={skillsAnimation}
+          >
             Hi again, my name is Albert, i am 26 years old at present and i was
             born and growed in the city of Tijuana, Baja California, México.
             <br />
@@ -49,6 +58,7 @@ function About() {
         </motion.div>
         <motion.hr
           className='separator'
+          /*Framer Motions Attributtes*/
           variants={skillsAnimation}
           initial='start'
           animate='onStay'
@@ -56,6 +66,7 @@ function About() {
         />
         <motion.div
           className='about__skills'
+          /*Framer Motions Attributtes*/
           variants={skillsAnimation}
           initial='start'
           animate='onStay'
@@ -63,33 +74,61 @@ function About() {
         >
           <h1 className='about__h1'>Skills</h1>
           <div className='about__ul'>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <DiHtml5 className='about__icon' />
               <span className='icon__span'>HTML</span>
             </motion.div>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <DiCss3 className='about__icon' />
               <span className='icon__span'>CSS</span>
             </motion.div>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <DiJavascript className='about__icon' />
               <span className='icon__span'>Javascript</span>
             </motion.div>
           </div>
           <div className='about__ul'>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <SiReact className='about__icon' />
               <span className='icon__span'>React Js</span>
             </motion.div>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <SiFramer className='about__icon' />
               <span className='icon__span'>Framer Motion</span>
             </motion.div>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <BsGit className='about__icon' />
               <span className='icon__span'>Git</span>
             </motion.div>
-            <motion.div className='about__li' variants={skillsAnimation}>
+            <motion.div
+              className='about__li'
+              /*Framer Motions Attributtes*/
+              variants={skillsAnimation}
+            >
               <AiFillGithub className='about__icon' />
               <span className='icon__span'>Github</span>
             </motion.div>
