@@ -16,6 +16,7 @@
   left: 0;
   bottom: 0;
   width: 100vw;
+  z-index: 100;
 }
 
 .footer[data-ison='true'] {
@@ -25,9 +26,11 @@
 .footer__rectangle {
   position: fixed;
   scale: 1.4;
+  z-index: 90;
 }
 
 .icon__container {
+  z-index: 100;
   height: auto;
   display: flex;
   justify-content: space-evenly;

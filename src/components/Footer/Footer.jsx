@@ -45,29 +45,6 @@ function Footer() {
       variants={footerAnimationVariants}
       animate={onContactPage ? 'onStay' : 'onStart'}
     >
-      <svg
-        className='footer__rectangle'
-        width='381'
-        height='60'
-        viewBox='0 0 381 60'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <motion.rect
-          id='Rectangle 1'
-          x='1.5'
-          y='1.5'
-          width='378'
-          height='57'
-          rx='16.5'
-          stroke='#FF5D1C'
-          stroke-width='3'
-          /*Framer Motions Attributtes*/
-          variants={retAnimation}
-          animate={onContactPage ? 'onStay' : 'start'}
-          exit='leave'
-        />
-      </svg>
       <motion.div
         className='icon__container'
         /*Framer Motions Attributtes*/
@@ -108,6 +85,29 @@ function Footer() {
           <AiFillInstagram className='icon' />
         </NavLink>
       </motion.div>
+      <svg
+        className='footer__rectangle'
+        width='381'
+        height='60'
+        viewBox='0 0 381 60'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <motion.rect
+          id='Rectangle 1'
+          x='1.5'
+          y='1.5'
+          width='378'
+          height='57'
+          rx='16.5'
+          stroke='#FF5D1C'
+          stroke-width='3'
+          /*Framer Motions Attributtes*/
+          variants={retAnimation}
+          animate={onContactPage ? 'onStay' : 'start'}
+          exit='leave'
+        />
+      </svg>
     </motion.div>
   );
 }
