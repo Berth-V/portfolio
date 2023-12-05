@@ -6,6 +6,7 @@ import medical from '../../assets/medical.jpg';
 import villas from '../../assets/villas.jpg';
 import yoneme from '../../assets/yoneme.jpg';
 import kateshop from '../../assets/kateshop.jpg';
+import taskmanager from '../../assets/taskmanager.jpg';
 import {motion} from 'framer-motion';
 
 function Projects() {
@@ -33,6 +34,14 @@ function Projects() {
       code: 'https://github.com/Berth-V/yoneme',
       parragraph:
         'This WebSite promotted Yoneme, a folclorick dance group from Tijuana city, in Mexico.',
+    },
+    {
+      img: taskmanager,
+      tittle: 'Task Manager useReducer/React Js ',
+      website: 'https://berth-v.github.io/taskmanager/',
+      code: 'https://github.com/Berth-V/taskmanager',
+      parragraph:
+        'This is a Task Manager builded with useReducer hook & Local Storage property.',
     },
     {
       img: kateshop,
