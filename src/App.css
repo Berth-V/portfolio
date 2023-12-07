@@ -5,6 +5,10 @@
   --secondary-color: #ff5d1c;
   --thrid-color: #d6d6d6;
   --margin-top-size: 75px;
+  --footer-height: 50px;
+  --footer-icons-size: 30px;
+  --footer-icons-grow: 50px;
+  --icon-container-width: 400px;
 }
 
 * {
@@ -27,7 +31,7 @@ body {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 380px) {
   :root {
     --margin-top-size: 40px;
   }

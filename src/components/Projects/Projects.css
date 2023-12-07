@@ -244,7 +244,14 @@
 
 @media screen and (max-width: 840px) {
   .projects {
-    height: calc(2050px - var(--margin-top-size));
+    height: auto;
+    margin: 0;
+  }
+
+  .projects__container{
+    height:  auto;
+    margin-top: var(--margin-top-size );
+    margin-bottom: var(--footer-height);
   }
 
   .projects__h1 {
@@ -278,14 +285,6 @@
 }
 
 @media screen and (max-width: 685px) {
-  .projects {
-    height: 1500px;
-    margin-top: 0;
-  }
-
-  .projects__container {
-    margin-top: 100px;
-  }
 
   /*MotionCard Component*/
   .projects__precard {
@@ -339,10 +338,6 @@
     --card-img-size: 200px;
   }
 
-  .projects {
-    height: 1200px;
-  }
-
   .projects__h1 {
     font-size: 30px;
   }
@@ -353,7 +348,7 @@
 
   /*MotionCard Component*/
   .projects__precard {
-    height: 260px;
+    height: 300px;
   }
   .projects__card {
     height: 250px;

@@ -1,13 +1,3 @@
-:root {
-  --primary-color: #202020;
-  --secondary-color: #ff5d1c;
-  --thrid-color: #d6d6d6;
-  --footer-height: 50px;
-  --footer-icons-size: 30px;
-  --footer-icons-grow: 50px;
-  --icon-container-width: 400px;
-}
-
 .footer {
   position: fixed;
   display: flex;
