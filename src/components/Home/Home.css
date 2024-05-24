@@ -5,6 +5,7 @@
   align-items: center;
   width: 100vw;
   height: calc(100dvh - 125px);
+  overflow-y: hidden;
 }
 
 .home__container {

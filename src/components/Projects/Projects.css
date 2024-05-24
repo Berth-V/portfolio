@@ -1,7 +1,7 @@
 :root {
   --secondary-color: #ff5d1c;
   --thrid-color: #d6d6d6;
-  --card-img-size: 360px;
+  --card-img-size: 390px;
 }
 
 .projects {
@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
   flex-wrap: wrap;
 }
 

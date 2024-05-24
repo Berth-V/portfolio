@@ -4,7 +4,7 @@ import NextButton from '../Shared/NextButton/NextButton';
 import Card from './Card';
 import medical from '../../assets/medical.jpg';
 import villas from '../../assets/villas.jpg';
-import yoneme from '../../assets/yoneme.jpg';
+import toptier from '../../assets/toptier.avif';
 import kateshop from '../../assets/kateshop.jpg';
 import taskmanager from '../../assets/taskmanager.jpg';
 import {motion} from 'framer-motion';
@@ -28,12 +28,12 @@ function Projects() {
         'This WebSite promotted services from a company called Villas Power Sweeping, that provides sweep cleaning services in San Diego county, in California.',
     },
     {
-      img: yoneme,
-      tittle: 'Yoneme/React Js',
-      website: 'https://yoneme.com/',
-      code: 'https://github.com/Berth-V/yoneme',
+      img: toptier,
+      tittle: 'Top Tier Termite Control/React Js',
+      website: 'https://toptiertermite.com/',
+      code: 'https://github.com/Berth-V/toptiertermite',
       parragraph:
-        'This WebSite promotted Yoneme, a folclorick dance group from Tijuana city, in Mexico.',
+        'This WebSite promotted Top-Tier Termite Control, a termite infestation.',
     },
     {
       img: taskmanager,
