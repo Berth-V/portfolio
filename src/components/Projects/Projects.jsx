@@ -5,8 +5,9 @@ import Card from './Card';
 import medical from '../../assets/medical.jpg';
 import villas from '../../assets/villas.jpg';
 import toptier from '../../assets/toptier.avif';
-import kateshop from '../../assets/kateshop.jpg';
 import taskmanager from '../../assets/taskmanager.jpg';
+import meowdomcat from '../../assets/meowdomcat.jpg';
+import kateshop from '../../assets/kateshop.jpg';
 import {motion} from 'framer-motion';
 
 function Projects() {
@@ -42,6 +43,14 @@ function Projects() {
       code: 'https://github.com/Berth-V/taskmanager',
       parragraph:
         'This is a Task Manager builded with useReducer hook & Local Storage property.',
+    },
+    {
+      img: meowdomcat,
+      tittle: 'Meowdom Cat Fetch/React Js',
+      website: 'https://berth-v.github.io/meowdomcat/',
+      code: 'https://github.com/Berth-V/meowdomcat',
+      parragraph:
+        'This is Meowdom Cat, if you want to view some fuunny Cats, just Press The Button and Have Fun!',
     },
     {
       img: kateshop,
