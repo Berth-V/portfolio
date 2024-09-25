@@ -44,7 +44,7 @@ function About() {
             /*Framer Motions Attributtes*/
             variants={skillsAnimation}
           >
-            Hi again, my name is Albert, i am 26 years old at present and i was
+            Hi again, my name is Albert, i am 27 years old at present and i was
             born and growed in the city of Tijuana, Baja California, México.
             <br />
             I am a self-learning front-end developer, but at my free time
@@ -52,7 +52,7 @@ function About() {
             interested to learn mobile aplications dev.
             <br />I have a pair of hobbies, but i think that the most
             outstanding one, will be dancing, i have beeing in a folclorick
-            dance group since my 12 years and i like to express my self by that
+            dance group since my 13 years and i like to express my self by that
             way.
           </motion.p>
         </motion.div>
